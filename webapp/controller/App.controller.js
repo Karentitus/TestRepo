@@ -3,12 +3,10 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("opensap.movies.controller.App", {
+	return Controller.extend("sap.com.moldtech.controller.App", {
 		onInit: function () {
 
-		},
-		onImagePress: function(){
-			window.open("https://www.imdb.com/");
+
 		}
 	});
 });

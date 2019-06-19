@@ -1,13 +1,9 @@
-<mvc:View controllerName="opensap.movies.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="sap.com.moldtech.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						<Image src="images/MoviesHeader.png"
-						tooltip="{i18n>Movie_illustration}" width="100%"
-							press=".onImagePress">
-						</Image>
 						
 					</content>
 				</Page>

@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "opensap.movies",
+		"id": "sap.com.moldtech",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -14,6 +14,7 @@
 			"version": "1.40.12"
 		}
 	},
+
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -30,10 +31,11 @@
 			"phone": true
 		}
 	},
+
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "opensap.movies.view.App",
+			"viewName": "sap.com.moldtech.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "App"
@@ -54,36 +56,30 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "opensap.movies.i18n.i18n"
+					"bundleName": "sap.com.moldtech.i18n.i18n"
 				}
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		},
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "opensap.movies.view",
+				"viewPath": "sap.com.moldtech.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [
-				{
-					"name": "RouteApp",
-					"pattern": "RouteApp",
-					"target": [
-						"TargetApp"
-					]
-				}
-			],
+			"routes": [{
+				"name": "RouteApp",
+				"pattern": "RouteApp",
+				"target": ["TargetApp"]
+			}],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",
@@ -94,9 +90,5 @@
 				}
 			}
 		}
-	},
-	"sap.platform.hcp": {
-		"uri": "webapp",
-		"_version": "1.1.0"
 	}
 }

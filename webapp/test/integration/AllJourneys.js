@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "opensap.movies.view.",
+		viewNamespace: "sap.com.moldtech.view.",
 		autoWait: true
 	});
 });
